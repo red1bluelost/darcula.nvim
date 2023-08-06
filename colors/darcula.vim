@@ -216,7 +216,7 @@ call s:Hi('Constant', s:p.constant, s:p.null, 'italic')
 call s:Hi('String', s:p.string)
 hi! link Character String
 call s:Hi('Number', s:p.number)
-call s:Hi('Delimiter', s:p.delimiter)
+call s:Hi('Delimiter', s:p.fg)
 call s:Hi('SpecialComment', s:p.specialComment, s:p.null, 'italic')
 hi! link Statement Keyword
 call s:Hi('Keyword', s:p.keyword)
@@ -619,3 +619,26 @@ hi! link shOperator NormalFg
 
 " help
 hi! link helpHyperTextJump Number
+
+" Coc
+hi! link CocErrorSign ErrorSign
+hi! link CocWarningSign WarningSign
+hi! link CocInfoSign InfoSign
+hi! link CocHintSign HintSign
+hi! link CocErrorFloat Pmenu
+hi! link CocWarningFloat Pmenu
+hi! link CocInfoFloat Pmenu
+hi! link CocHintFloat Pmenu
+hi! link CocHighlightText IdentifierUnderCaret
+hi! link CocHighlightRead IdentifierUnderCaret
+hi! link CocHighlightWrite IdentifierUnderCaretWrite
+hi! link CocErrorHighlight CodeError
+hi! link CocWarningHighlight CodeWarning
+hi! link CocInfoHighlight CodeInfo
+hi! link CocHintHighlight CodeHint
+
+hi! link CocSemClass cDataStructure
+hi! link CocSemEnum cDataStructure
+hi! link CocSemEnumMember Constant
+hi! link CocSemProperty cStructField
+hi! link CocSemStruct cDataStructure
